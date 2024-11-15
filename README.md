@@ -1,4 +1,4 @@
-# 🛍️ **Microservicios para Comercio Electrónico**
+# 🛍️ ** API Microservicios y Monolitos**
 
 Este proyecto implementa una arquitectura de microservicios en Laravel para un comercio electrónico, dividiendo las funcionalidades en servicios independientes para **Usuarios**, **Productos**, **Pedidos**, y **Pagos**.
 
@@ -76,218 +76,44 @@ bash
 Copiar código
 php artisan serve
 
-## 📡 Rutas API - Usuarios
+# 📡 Rutas API
 
-|
-Método
-|
-Ruta
-|
-Descripción
-|
-|
+## 👥 Usuarios
 
----
+| Método | Ruta | Descripción |
+| --- | --- | --- |
+| GET | `/api/users` | Obtener todos los usuarios |
+| GET | `/api/users/{id}` | Obtener un usuario específico |
+| POST | `/api/users` | Crear un usuario |
+| PUT | `/api/users/{id}` | Actualizar un usuario |
+| DELETE | `/api/users/{id}` | Eliminar un usuario |
 
-## |
+## 📦 Productos
 
-## |
+| Método | Ruta | Descripción |
+| --- | --- | --- |
+| GET | `/api/products` | Obtener todos los productos |
+| GET | `/api/products/{id}` | Obtener un producto específico |
+| POST | `/api/products` | Crear un producto |
+| PUT | `/api/products/{id}` | Actualizar un producto |
+| DELETE | `/api/products/{id}` | Eliminar un producto |
 
-|
-|
-GET
-|
-`/api/users`
-|
-Obtener todos los usuarios
-|
-|
-GET
-|
-`/api/users/{id}`
-|
-Obtener un usuario específico
-|
-|
-POST
-|
-`/api/users`
-|
-Crear un usuario
-|
-|
-PUT
-|
-`/api/users/{id}`
-|
-Actualizar un usuario
-|
-|
-DELETE
-|
-`/api/users/{id}`
-|
-Eliminar un usuario
-|
+## 📝 Pedidos
 
-## 📡 Rutas API - Productos
+| Método | Ruta | Descripción |
+| --- | --- | --- |
+| GET | `/api/orders` | Obtener todos los pedidos |
+| GET | `/api/orders/{id}` | Obtener un pedido específico |
+| POST | `/api/orders` | Crear un pedido |
+| PUT | `/api/orders/{id}` | Actualizar un pedido |
+| DELETE | `/api/orders/{id}` | Eliminar un pedido |
 
-|
-Método
-|
-Ruta
-|
-Descripción
-|
-|
+## 💳 Pagos
 
----
-
-## |
-
-## |
-
-|
-|
-GET
-|
-`/api/products`
-|
-Obtener todos los productos
-|
-|
-GET
-|
-`/api/products/{id}`
-|
-Obtener un producto específico
-|
-|
-POST
-|
-`/api/products`
-|
-Crear un producto
-|
-|
-PUT
-|
-`/api/products/{id}`
-|
-Actualizar un producto
-|
-|
-DELETE
-|
-`/api/products/{id}`
-|
-Eliminar un producto
-|
-
-## 📡 Rutas API - Pedidos
-
-|
-Método
-|
-Ruta
-|
-Descripción
-|
-|
-
----
-
-## |
-
-## |
-
-|
-|
-GET
-|
-`/api/orders`
-|
-Obtener todos los pedidos
-|
-|
-GET
-|
-`/api/orders/{id}`
-|
-Obtener un pedido específico
-|
-|
-POST
-|
-`/api/orders`
-|
-Crear un pedido
-|
-|
-PUT
-|
-`/api/orders/{id}`
-|
-Actualizar un pedido
-|
-|
-DELETE
-|
-`/api/orders/{id}`
-|
-Eliminar un pedido
-|
-
-## 📡 Rutas API - Pagos
-
-|
-Método
-|
-Ruta
-|
-Descripción
-|
-|
-
----
-
-## |
-
-## |
-
-|
-|
-GET
-|
-`/api/payments`
-|
-Obtener todos los pagos
-|
-|
-GET
-|
-`/api/payments/{id}`
-|
-Obtener un pago específico
-|
-|
-POST
-|
-`/api/payments`
-|
-Crear un pago
-|
-|
-PUT
-|
-`/api/payments/{id}`
-|
-Actualizar un pago
-|
-|
-DELETE
-|
-`/api/payments/{id}`
-|
-Eliminar un pago
-|
+| Método | Ruta | Descripción |
+| --- | --- | --- |
+| GET | `/api/payments` | Obtener todos los pagos |
+| GET | `/api/payments/{id}` | Obtener un pago específico |
+| POST | `/api/payments` | Crear un pago |
+| PUT | `/api/payments/{id}` | Actualizar un pago |
+| DELETE | `/api/payments/{id}` | Eliminar un pago |
